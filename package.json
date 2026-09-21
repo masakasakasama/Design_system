@@ -1,0 +1,29 @@
+{
+  "name": "@tatsu/design-system",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Shared design tokens and UI primitives for Tatsu Android and Web apps.",
+  "files": [
+    "dist/web",
+    "tokens",
+    "README.md"
+  ],
+  "main": "./dist/web/index.js",
+  "exports": {
+    ".": "./dist/web/index.js",
+    "./styles.css": "./dist/web/index.css",
+    "./tokens.css": "./dist/web/tokens.css",
+    "./tokens": "./tokens/design-tokens.json"
+  },
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "check:hardcoded": "node scripts/check-hardcoded.mjs src/web android/tatsu-design-system/src/main/java/com/masakasakasama/designsystem",
+    "check:generated": "npm run generate && git diff --exit-code -- dist/web android/tatsu-design-system/src/main/java/com/masakasakasama/designsystem/generated",
+    "validate": "npm run generate && npm run check:hardcoded",
+    "prepare": "npm run generate"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

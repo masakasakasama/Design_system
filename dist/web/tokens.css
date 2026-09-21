@@ -1,0 +1,179 @@
+/* GENERATED FILE. Edit tokens/design-tokens.json, then run npm run generate. */
+:root {
+  --tatsu-space-0: 0px;
+  --tatsu-space-xs: 4px;
+  --tatsu-space-sm: 8px;
+  --tatsu-space-md: 12px;
+  --tatsu-space-lg: 16px;
+  --tatsu-space-xl: 24px;
+  --tatsu-space-xxl: 32px;
+  --tatsu-space-xxxl: 48px;
+  --tatsu-radius-sm: 8px;
+  --tatsu-radius-md: 12px;
+  --tatsu-radius-lg: 16px;
+  --tatsu-radius-xl: 24px;
+  --tatsu-radius-pill: 999px;
+  --tatsu-motion-fast: 120ms;
+  --tatsu-motion-normal: 220ms;
+  --tatsu-motion-slow: 360ms;
+  --tatsu-stroke-thin: 1px;
+  --tatsu-stroke-focus: 2px;
+  --tatsu-type-display-size: 34px;
+  --tatsu-type-display-line-height: 40px;
+  --tatsu-type-display-weight: 700;
+  --tatsu-type-title-size: 22px;
+  --tatsu-type-title-line-height: 28px;
+  --tatsu-type-title-weight: 700;
+  --tatsu-type-body-size: 16px;
+  --tatsu-type-body-line-height: 24px;
+  --tatsu-type-body-weight: 400;
+  --tatsu-type-label-size: 13px;
+  --tatsu-type-label-line-height: 18px;
+  --tatsu-type-label-weight: 600;
+  --tatsu-type-metric-size: 28px;
+  --tatsu-type-metric-line-height: 34px;
+  --tatsu-type-metric-weight: 700;
+  --tatsu-card-radius: 16px;
+  --tatsu-card-padding: 16px;
+  --tatsu-card-gap: 12px;
+  --tatsu-card-border-width: 1px;
+  --tatsu-button-radius: 12px;
+  --tatsu-button-height: 48px;
+  --tatsu-button-padding-x: 16px;
+  --tatsu-page-padding-compact: 16px;
+  --tatsu-page-padding-wide: 24px;
+  --tatsu-page-content-max-width: 1200px;
+}
+
+[data-tatsu-accent="ocean"][data-tatsu-theme="light"] {
+  --tatsu-color-background: #F5F7FA;
+  --tatsu-color-surface: #FFFFFF;
+  --tatsu-color-surface-elevated: #EEF1F4;
+  --tatsu-color-border: #D7DCE2;
+  --tatsu-color-text-primary: #111316;
+  --tatsu-color-text-secondary: #48515E;
+  --tatsu-color-text-muted: #66717F;
+  --tatsu-color-accent: #006EDC;
+  --tatsu-color-accent-hover: #0056B3;
+  --tatsu-color-accent-container: #DDF2FF;
+  --tatsu-color-on-accent: #FFFFFF;
+  --tatsu-color-success: #33D17A;
+  --tatsu-color-warning: #F5B942;
+  --tatsu-color-error: #FF5E66;
+  --tatsu-color-info: #5AA9FF;
+  color-scheme: light;
+}
+
+[data-tatsu-accent="ocean"][data-tatsu-theme="dark"] {
+  --tatsu-color-background: #070809;
+  --tatsu-color-surface: #111316;
+  --tatsu-color-surface-elevated: #181B20;
+  --tatsu-color-border: #242831;
+  --tatsu-color-text-primary: #F5F7FA;
+  --tatsu-color-text-secondary: #ADB5C1;
+  --tatsu-color-text-muted: #7E8795;
+  --tatsu-color-accent: #3AAEFF;
+  --tatsu-color-accent-hover: #6EC6FF;
+  --tatsu-color-accent-container: #0056B3;
+  --tatsu-color-on-accent: #000000;
+  --tatsu-color-success: #33D17A;
+  --tatsu-color-warning: #F5B942;
+  --tatsu-color-error: #FF5E66;
+  --tatsu-color-info: #5AA9FF;
+  color-scheme: dark;
+}
+
+[data-tatsu-accent="sage"][data-tatsu-theme="light"] {
+  --tatsu-color-background: #F5F7FA;
+  --tatsu-color-surface: #FFFFFF;
+  --tatsu-color-surface-elevated: #EEF1F4;
+  --tatsu-color-border: #D7DCE2;
+  --tatsu-color-text-primary: #111316;
+  --tatsu-color-text-secondary: #48515E;
+  --tatsu-color-text-muted: #66717F;
+  --tatsu-color-accent: #2A9C68;
+  --tatsu-color-accent-hover: #207A52;
+  --tatsu-color-accent-container: #DDF7E9;
+  --tatsu-color-on-accent: #FFFFFF;
+  --tatsu-color-success: #33D17A;
+  --tatsu-color-warning: #F5B942;
+  --tatsu-color-error: #FF5E66;
+  --tatsu-color-info: #5AA9FF;
+  color-scheme: light;
+}
+
+[data-tatsu-accent="sage"][data-tatsu-theme="dark"] {
+  --tatsu-color-background: #070809;
+  --tatsu-color-surface: #111316;
+  --tatsu-color-surface-elevated: #181B20;
+  --tatsu-color-border: #242831;
+  --tatsu-color-text-primary: #F5F7FA;
+  --tatsu-color-text-secondary: #ADB5C1;
+  --tatsu-color-text-muted: #7E8795;
+  --tatsu-color-accent: #62C998;
+  --tatsu-color-accent-hover: #8EDDB8;
+  --tatsu-color-accent-container: #207A52;
+  --tatsu-color-on-accent: #000000;
+  --tatsu-color-success: #33D17A;
+  --tatsu-color-warning: #F5B942;
+  --tatsu-color-error: #FF5E66;
+  --tatsu-color-info: #5AA9FF;
+  color-scheme: dark;
+}
+
+[data-tatsu-accent="amethyst"][data-tatsu-theme="light"] {
+  --tatsu-color-background: #F5F7FA;
+  --tatsu-color-surface: #FFFFFF;
+  --tatsu-color-surface-elevated: #EEF1F4;
+  --tatsu-color-border: #D7DCE2;
+  --tatsu-color-text-primary: #111316;
+  --tatsu-color-text-secondary: #48515E;
+  --tatsu-color-text-muted: #66717F;
+  --tatsu-color-accent: #7547DB;
+  --tatsu-color-accent-hover: #5E35B1;
+  --tatsu-color-accent-container: #F0E8FF;
+  --tatsu-color-on-accent: #FFFFFF;
+  --tatsu-color-success: #33D17A;
+  --tatsu-color-warning: #F5B942;
+  --tatsu-color-error: #FF5E66;
+  --tatsu-color-info: #5AA9FF;
+  color-scheme: light;
+}
+
+[data-tatsu-accent="amethyst"][data-tatsu-theme="dark"] {
+  --tatsu-color-background: #070809;
+  --tatsu-color-surface: #111316;
+  --tatsu-color-surface-elevated: #181B20;
+  --tatsu-color-border: #242831;
+  --tatsu-color-text-primary: #F5F7FA;
+  --tatsu-color-text-secondary: #ADB5C1;
+  --tatsu-color-text-muted: #7E8795;
+  --tatsu-color-accent: #AB82FF;
+  --tatsu-color-accent-hover: #C6A8FF;
+  --tatsu-color-accent-container: #5E35B1;
+  --tatsu-color-on-accent: #000000;
+  --tatsu-color-success: #33D17A;
+  --tatsu-color-warning: #F5B942;
+  --tatsu-color-error: #FF5E66;
+  --tatsu-color-info: #5AA9FF;
+  color-scheme: dark;
+}
+
+:root {
+  --tatsu-color-background: #070809;
+  --tatsu-color-surface: #111316;
+  --tatsu-color-surface-elevated: #181B20;
+  --tatsu-color-border: #242831;
+  --tatsu-color-text-primary: #F5F7FA;
+  --tatsu-color-text-secondary: #ADB5C1;
+  --tatsu-color-text-muted: #7E8795;
+  --tatsu-color-accent: #3AAEFF;
+  --tatsu-color-accent-hover: #6EC6FF;
+  --tatsu-color-accent-container: #0056B3;
+  --tatsu-color-on-accent: #000000;
+  --tatsu-color-success: #33D17A;
+  --tatsu-color-warning: #F5B942;
+  --tatsu-color-error: #FF5E66;
+  --tatsu-color-info: #5AA9FF;
+  color-scheme: dark;
+}

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "description": "Consumer-only semantic aliases. Values name shared semantic roles, not primitive values."
+  },
+  "aliases": {
+    "heroSurface": "surface",
+    "primaryMetric": "textPrimary",
+    "primaryAction": "accent"
+  }
+}

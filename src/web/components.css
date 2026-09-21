@@ -1,0 +1,100 @@
+/* Authored component recipes. Use semantic CSS variables only. */
+.tatsu-page {
+  min-height: 100%;
+  background: var(--tatsu-color-background);
+  color: var(--tatsu-color-text-primary);
+  padding: var(--tatsu-page-padding-compact);
+}
+
+.tatsu-page__inner {
+  width: min(100%, var(--tatsu-page-content-max-width));
+  margin-inline: auto;
+}
+
+.tatsu-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--tatsu-card-gap);
+  padding: var(--tatsu-card-padding);
+  border: var(--tatsu-card-border-width) solid var(--tatsu-color-border);
+  border-radius: var(--tatsu-card-radius);
+  background: var(--tatsu-color-surface);
+  color: var(--tatsu-color-text-primary);
+}
+
+.tatsu-card--elevated {
+  background: var(--tatsu-color-surface-elevated);
+}
+
+.tatsu-metric {
+  display: flex;
+  flex-direction: column;
+  gap: var(--tatsu-space-xs);
+}
+
+.tatsu-metric__value {
+  font-size: var(--tatsu-type-metric-size);
+  line-height: var(--tatsu-type-metric-line-height);
+  font-weight: var(--tatsu-type-metric-weight);
+  font-variant-numeric: tabular-nums;
+}
+
+.tatsu-metric__label {
+  color: var(--tatsu-color-text-secondary);
+  font-size: var(--tatsu-type-label-size);
+  line-height: var(--tatsu-type-label-line-height);
+  font-weight: var(--tatsu-type-label-weight);
+}
+
+.tatsu-button {
+  min-height: var(--tatsu-button-height);
+  padding-inline: var(--tatsu-button-padding-x);
+  border: 0;
+  border-radius: var(--tatsu-button-radius);
+  background: var(--tatsu-color-accent);
+  color: var(--tatsu-color-on-accent);
+  font: inherit;
+  font-weight: var(--tatsu-type-label-weight);
+  cursor: pointer;
+  transition:
+    background-color var(--tatsu-motion-fast) ease,
+    transform var(--tatsu-motion-fast) ease;
+}
+
+.tatsu-button:hover {
+  background: var(--tatsu-color-accent-hover);
+}
+
+.tatsu-button:focus-visible {
+  outline: var(--tatsu-stroke-focus) solid var(--tatsu-color-accent);
+  outline-offset: var(--tatsu-space-xs);
+}
+
+.tatsu-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.tatsu-status {
+  color: var(--tatsu-color-text-secondary);
+}
+
+.tatsu-status[data-state="error"] {
+  color: var(--tatsu-color-error);
+}
+
+.tatsu-status[data-state="loading"] {
+  opacity: 0.72;
+}
+
+@media (min-width: 768px) {
+  .tatsu-page {
+    padding: var(--tatsu-page-padding-wide);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tatsu-button {
+    transition: none;
+  }
+}

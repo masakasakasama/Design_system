@@ -1,0 +1,253 @@
+{
+  "meta": {
+    "name": "Tatsu Design System",
+    "version": "0.1.0",
+    "distribution": "build-time",
+    "runtimeTokens": false,
+    "defaultAccent": "ocean",
+    "defaultTheme": "dark"
+  },
+  "primitive": {
+    "color": {
+      "neutral": {
+        "0": "#FFFFFF",
+        "50": "#F5F7FA",
+        "100": "#EEF1F4",
+        "200": "#D7DCE2",
+        "300": "#ADB5C1",
+        "400": "#7E8795",
+        "500": "#66717F",
+        "600": "#48515E",
+        "700": "#242831",
+        "800": "#1C2026",
+        "850": "#181B20",
+        "900": "#111316",
+        "950": "#070809",
+        "1000": "#000000"
+      },
+      "ocean": {
+        "100": "#DDF2FF",
+        "200": "#B8E2FF",
+        "300": "#6EC6FF",
+        "400": "#3AAEFF",
+        "500": "#0A84FF",
+        "600": "#006EDC",
+        "700": "#0056B3"
+      },
+      "sage": {
+        "100": "#DDF7E9",
+        "200": "#B7EBCF",
+        "300": "#8EDDB8",
+        "400": "#62C998",
+        "500": "#3DBB80",
+        "600": "#2A9C68",
+        "700": "#207A52"
+      },
+      "amethyst": {
+        "100": "#F0E8FF",
+        "200": "#DECFFF",
+        "300": "#C6A8FF",
+        "400": "#AB82FF",
+        "500": "#8B5CF6",
+        "600": "#7547DB",
+        "700": "#5E35B1"
+      },
+      "status": {
+        "success": "#33D17A",
+        "warning": "#F5B942",
+        "error": "#FF5E66",
+        "info": "#5AA9FF"
+      }
+    },
+    "space": {
+      "0": 0,
+      "xs": 4,
+      "sm": 8,
+      "md": 12,
+      "lg": 16,
+      "xl": 24,
+      "xxl": 32,
+      "xxxl": 48
+    },
+    "radius": {
+      "sm": 8,
+      "md": 12,
+      "lg": 16,
+      "xl": 24,
+      "pill": 999
+    },
+    "type": {
+      "display": {
+        "size": 34,
+        "lineHeight": 40,
+        "weight": 700
+      },
+      "title": {
+        "size": 22,
+        "lineHeight": 28,
+        "weight": 700
+      },
+      "body": {
+        "size": 16,
+        "lineHeight": 24,
+        "weight": 400
+      },
+      "label": {
+        "size": 13,
+        "lineHeight": 18,
+        "weight": 600
+      },
+      "metric": {
+        "size": 28,
+        "lineHeight": 34,
+        "weight": 700
+      }
+    },
+    "motion": {
+      "fast": 120,
+      "normal": 220,
+      "slow": 360
+    },
+    "stroke": {
+      "thin": 1,
+      "focus": 2
+    }
+  },
+  "semantic": {
+    "themes": {
+      "ocean": {
+        "light": {
+          "background": "{primitive.color.neutral.50}",
+          "surface": "{primitive.color.neutral.0}",
+          "surfaceElevated": "{primitive.color.neutral.100}",
+          "border": "{primitive.color.neutral.200}",
+          "textPrimary": "{primitive.color.neutral.900}",
+          "textSecondary": "{primitive.color.neutral.600}",
+          "textMuted": "{primitive.color.neutral.500}",
+          "accent": "{primitive.color.ocean.600}",
+          "accentHover": "{primitive.color.ocean.700}",
+          "accentContainer": "{primitive.color.ocean.100}",
+          "onAccent": "{primitive.color.neutral.0}",
+          "success": "{primitive.color.status.success}",
+          "warning": "{primitive.color.status.warning}",
+          "error": "{primitive.color.status.error}",
+          "info": "{primitive.color.status.info}"
+        },
+        "dark": {
+          "background": "{primitive.color.neutral.950}",
+          "surface": "{primitive.color.neutral.900}",
+          "surfaceElevated": "{primitive.color.neutral.850}",
+          "border": "{primitive.color.neutral.700}",
+          "textPrimary": "{primitive.color.neutral.50}",
+          "textSecondary": "{primitive.color.neutral.300}",
+          "textMuted": "{primitive.color.neutral.400}",
+          "accent": "{primitive.color.ocean.400}",
+          "accentHover": "{primitive.color.ocean.300}",
+          "accentContainer": "{primitive.color.ocean.700}",
+          "onAccent": "{primitive.color.neutral.1000}",
+          "success": "{primitive.color.status.success}",
+          "warning": "{primitive.color.status.warning}",
+          "error": "{primitive.color.status.error}",
+          "info": "{primitive.color.status.info}"
+        }
+      },
+      "sage": {
+        "light": {
+          "background": "{primitive.color.neutral.50}",
+          "surface": "{primitive.color.neutral.0}",
+          "surfaceElevated": "{primitive.color.neutral.100}",
+          "border": "{primitive.color.neutral.200}",
+          "textPrimary": "{primitive.color.neutral.900}",
+          "textSecondary": "{primitive.color.neutral.600}",
+          "textMuted": "{primitive.color.neutral.500}",
+          "accent": "{primitive.color.sage.600}",
+          "accentHover": "{primitive.color.sage.700}",
+          "accentContainer": "{primitive.color.sage.100}",
+          "onAccent": "{primitive.color.neutral.0}",
+          "success": "{primitive.color.status.success}",
+          "warning": "{primitive.color.status.warning}",
+          "error": "{primitive.color.status.error}",
+          "info": "{primitive.color.status.info}"
+        },
+        "dark": {
+          "background": "{primitive.color.neutral.950}",
+          "surface": "{primitive.color.neutral.900}",
+          "surfaceElevated": "{primitive.color.neutral.850}",
+          "border": "{primitive.color.neutral.700}",
+          "textPrimary": "{primitive.color.neutral.50}",
+          "textSecondary": "{primitive.color.neutral.300}",
+          "textMuted": "{primitive.color.neutral.400}",
+          "accent": "{primitive.color.sage.400}",
+          "accentHover": "{primitive.color.sage.300}",
+          "accentContainer": "{primitive.color.sage.700}",
+          "onAccent": "{primitive.color.neutral.1000}",
+          "success": "{primitive.color.status.success}",
+          "warning": "{primitive.color.status.warning}",
+          "error": "{primitive.color.status.error}",
+          "info": "{primitive.color.status.info}"
+        }
+      },
+      "amethyst": {
+        "light": {
+          "background": "{primitive.color.neutral.50}",
+          "surface": "{primitive.color.neutral.0}",
+          "surfaceElevated": "{primitive.color.neutral.100}",
+          "border": "{primitive.color.neutral.200}",
+          "textPrimary": "{primitive.color.neutral.900}",
+          "textSecondary": "{primitive.color.neutral.600}",
+          "textMuted": "{primitive.color.neutral.500}",
+          "accent": "{primitive.color.amethyst.600}",
+          "accentHover": "{primitive.color.amethyst.700}",
+          "accentContainer": "{primitive.color.amethyst.100}",
+          "onAccent": "{primitive.color.neutral.0}",
+          "success": "{primitive.color.status.success}",
+          "warning": "{primitive.color.status.warning}",
+          "error": "{primitive.color.status.error}",
+          "info": "{primitive.color.status.info}"
+        },
+        "dark": {
+          "background": "{primitive.color.neutral.950}",
+          "surface": "{primitive.color.neutral.900}",
+          "surfaceElevated": "{primitive.color.neutral.850}",
+          "border": "{primitive.color.neutral.700}",
+          "textPrimary": "{primitive.color.neutral.50}",
+          "textSecondary": "{primitive.color.neutral.300}",
+          "textMuted": "{primitive.color.neutral.400}",
+          "accent": "{primitive.color.amethyst.400}",
+          "accentHover": "{primitive.color.amethyst.300}",
+          "accentContainer": "{primitive.color.amethyst.700}",
+          "onAccent": "{primitive.color.neutral.1000}",
+          "success": "{primitive.color.status.success}",
+          "warning": "{primitive.color.status.warning}",
+          "error": "{primitive.color.status.error}",
+          "info": "{primitive.color.status.info}"
+        }
+      }
+    }
+  },
+  "component": {
+    "card": {
+      "radius": "{primitive.radius.lg}",
+      "padding": "{primitive.space.lg}",
+      "gap": "{primitive.space.md}",
+      "borderWidth": "{primitive.stroke.thin}"
+    },
+    "button": {
+      "radius": "{primitive.radius.md}",
+      "height": 48,
+      "paddingX": "{primitive.space.lg}"
+    },
+    "metric": {
+      "gap": "{primitive.space.xs}"
+    },
+    "page": {
+      "paddingCompact": "{primitive.space.lg}",
+      "paddingWide": "{primitive.space.xl}",
+      "contentMaxWidth": 1200
+    },
+    "focus": {
+      "width": "{primitive.stroke.focus}",
+      "offset": "{primitive.space.xs}"
+    }
+  }
+}
