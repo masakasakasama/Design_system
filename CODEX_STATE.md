@@ -10,18 +10,21 @@ Goal: Web/Androidの共通token生成を正しく検証し、consumerへ安全�
 - 存在しないchecker対象パスをexit 2で拒否し、CIパス誤記を成功扱いしない。
 - 実CLIでmissing / mixed-validity roots / authored violations / clean and generated filesを検証するfixtureを追加。
 
+- Trip_Plan確定commit c84b9e1でOcean Dark footer文字/hover/focus色を導入。revision3c1f39b＋vendored SHA-256を固定し、browser screenshot/色/focus/buildを確認。
+
 ## Current
-- checker入力の誤りを検出済み。consumerのUI移行は未実施。
+- 最初のconsumer最小導入が完了。Trip_Planの確定commitだけを参照、Androidや他consumerは移行済みとしない。
 
 ## Next
-- docs/ADOPTION.mdに従い対象consumerのrevision pinと最小範囲の導入を進め、UI差分とbuildを検証する。
+- Trip_Planの次の小さなsurfaceまたは別の最近更新consumerを選び、同じrevision pin方式で導入・UI比較・buildを行う。
 
 ## Blockers
-- consumerのUI移行は各repoの変更・build・画面検証が必要。現時点ではconsumer移行済みではない。
+- Android consumerと他画面の導入・実機確認は未完了。
 
 ## Verification
-- npm test: 5/5 passed
-- npm run validate and check:generated passed; generated artifacts unchanged
+- npm test 5/5; validate and check:generated passed; generated artifacts unchanged
+- Trip_Plan consumer production build and 5/5 data tests passed
+- Chrome semantic color/focus/About; screenshot reviewed; JS errors=[]; no runtime token request
 - git diff --check passed
 
-Updated at: 2026-10-02T16:53:27.282233+00:00
+Updated at: 2026-10-02T20:59:23.423662+00:00
