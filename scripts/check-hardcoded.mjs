@@ -7,6 +7,12 @@ if (!roots.length) {
   process.exit(2);
 }
 
+const missingRoots = roots.filter(target => !fs.existsSync(target));
+if (missingRoots.length) {
+  console.error("Checked input paths do not exist:\n" + missingRoots.join("\n"));
+  process.exit(2);
+}
+
 const allowed = [
   /generated[\\/]/,
   /design-tokens\.json$/,
