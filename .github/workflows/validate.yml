@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Test invalid token handling
+        run: npm test
       - name: Generate platform outputs
         run: npm run generate
       - name: Reject stale generated files

@@ -1,3 +1,4 @@
+import { resolveToken, requireColorToken } from "./token-validation.mjs";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -5,15 +6,7 @@ const repoRoot = path.resolve(new URL("..", import.meta.url).pathname);
 const tokenPath = path.join(repoRoot, "tokens", "design-tokens.json");
 const tokens = JSON.parse(fs.readFileSync(tokenPath, "utf8"));
 
-const get = (obj, dotted) => dotted.split(".").reduce((acc, key) => acc?.[key], obj);
-const resolve = (value) => {
-  if (typeof value !== "string") return value;
-  const match = value.match(/^\{(.+)\}$/);
-  if (!match) return value;
-  const resolved = get(tokens, match[1]);
-  if (resolved === undefined) throw new Error(`Unresolved token reference: ${value}`);
-  return resolve(resolved);
-};
+const resolve = (value) => resolveToken(tokens, value);
 
 const kebab = (value) => value.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
 const pascal = (value) => value.replace(/(^|[-_ ])(\w)/g, (_, __, c) => c.toUpperCase()).replace(/[^A-Za-z0-9]/g, "");
@@ -33,7 +26,7 @@ function validate() {
         "accentHover", "accentContainer", "onAccent",
         "success", "warning", "error", "info"
       ]) {
-        resolve(theme[mode][key]);
+        requireColorToken(tokens, theme[mode][key], `${accent}/${mode}/${key}`);
       }
     }
   }
