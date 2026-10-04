@@ -35,10 +35,11 @@ No runtime download or global layout migration. Chrome checks the computed seman
 colors and visible focus ring; screenshot review and consumer build/data tests passed.
 Further surfaces and Android consumers are still pending.
 
-## Selected next consumer surface (2026-10-04; implementation pending)
+## Astra About text adoption (2026-10-04; verified)
 
 Trip_Plan / Visto Astra About panel credit paragraphs, authored by `about()` in
-`visto-astra/src/main.js`, are the next surface. Keep the existing pinned revision
+`visto-astra/src/main.js`, were adopted at consumer commit `e0daaa2e81e4c900a45091683349405c22c0fff1`.
+The implementation retains the existing pinned revision
 `3c1f39b431286cac03710a8a9175a39a83244242` and tokens.css SHA-256
 `0fedb40e69e3f25821d445494ba35b14e39978a2112dfb88e27abf2d34941ea0`.
 Apply `--tatsu-color-text-muted` to the About credit text only, with an About-specific
@@ -46,8 +47,17 @@ class so unrelated panels retain their existing styles. Preserve font size, spac
 links, panel lifecycle, Earth rendering, and trip data. Update the vendored revision
 manifest scope without changing the pinned token contents.
 
-The consumer worker must compare the mobile and desktop About panel before/after,
-assert the computed token color and unchanged paragraph geometry, check opening and
-closing, run existing data tests and production build, and verify no runtime token
-request. Save actual consumer commit and evidence here after implementation.
-This selection does not establish adoption or UI/build acceptance.
+Consumer evidence in Trip_Plan `CODEX_STATE.md` at the commit above confirms:
+
+- Mobile 412x915 and desktop 1440x1000 before/after comparisons: paragraph geometry,
+  text, links, font size, line-height and padding unchanged.
+- Computed About text color matches pinned text-muted (rgb(126, 135, 149)); ordinary
+  `.credit` text retains its original color outside the About-specific class.
+- About close/reopen passed; screenshots reviewed; JavaScript errors empty.
+- Existing data tests 5/5 and production build passed. Trip data and token file bytes
+  unchanged; vendored revision/SHA-256 unchanged; no runtime token request.
+- GitHub Pages deployment CI for the consumer commit succeeded.
+
+This Design_system run checked the immutable consumer commit, its limited file list
+and saved verification evidence. It did not rerun the already passed consumer tests
+or change generated tokens. Android and other surfaces remain unverified.
